@@ -1,23 +1,34 @@
-$('.toggle-button').on('click', function() {
-  $('.left-sidebar').toggleClass('minimize');
-});
+/*!
+* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
+* Copyright 2013-2023 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+*/
+//
+// Scripts
+// 
 
-$('.user-profile').on('click', function() {
-  $('.left-sidebar').toggleClass('minimize');
-});
+window.addEventListener('DOMContentLoaded', event => {
 
-$('.close-chat-btn').on('click', function() {
-  $('.direct-messaging ').addClass('minimize');
-});
+    // Activate Bootstrap scrollspy on the main nav element
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#sideNav',
+            rootMargin: '0px 0px -40%',
+        });
+    };
 
-$('.open-chat-btn').on('click', function() {
-  $('.direct-messaging ').toggleClass('minimize');
-});
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
 
-$('.open-music-btn').on('click', function() {
-  $('.music-player').toggleClass('show');
-});
-
-$('.open-timer-btn').on('click', function() {
-  $('.timer-display').toggleClass('show');
 });
