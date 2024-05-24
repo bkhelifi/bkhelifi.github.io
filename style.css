@@ -193,7 +193,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 ol ol,
@@ -201,6 +201,10 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+}
+
+li {
+  margin-top: 0;
 }
 
 dt {
@@ -602,6 +606,12 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.img-logo {
+  max-width: 15%;
+  height: auto;
+  float: right;
 }
 
 .img-thumbnail {
