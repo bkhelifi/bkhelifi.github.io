@@ -609,7 +609,7 @@ progress {
 }
 
 .img-logo {
-  max-width: 6rem;
+  max-width: 100px;
   height: auto;
   float: right;
   object-fit: scale-down;
@@ -618,8 +618,8 @@ progress {
   text-align: center;
 }
 .img-center {
-  max-height: 3rem;
-  height: auto;
+  max-height: 50px;
+  width: auto;
   object-fit: scale-down;
   display: inline-block;
   vertical-align: center;
