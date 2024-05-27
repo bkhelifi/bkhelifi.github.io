@@ -614,6 +614,7 @@ progress {
   float: right;
   object-fit: scale-down;
   display: inline-block;
+  vertical-align: middle
 }
 
 .img-thumbnail {
