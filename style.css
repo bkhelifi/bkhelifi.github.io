@@ -609,12 +609,21 @@ progress {
 }
 
 .img-logo {
-  max-width: 13%;
+  max-width: 6rem;
   height: auto;
   float: right;
   object-fit: scale-down;
   display: inline-block;
-  vertical-align: middle
+  vertical-align: top;
+  text-align: center;
+}
+.img-center {
+  max-height: 3rem;
+  height: auto;
+  object-fit: scale-down;
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
 }
 
 .img-thumbnail {
